@@ -1,18 +1,50 @@
-## Getting Started
+Java Library Management (Beginner Guide)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This project is a Java project created using Visual Studio Code.
+This file explains how libraries (JAR files) are managed in this project.
 
-## Folder Structure
+Project Folder Structure
+project-root
+│
+├── src    → Java source files
+├── lib    → External library (JAR) files
+├── bin    → Compiled `.class` files
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Write your Java code inside the src folder
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Add required JAR files inside the lib folder
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+VS Code generates compiled files automatically in bin
 
-## Dependency Management
+Adding Libraries (JAR Files)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+If your project needs external libraries (example: MySQL, Gson, etc.):
+
+Download the required .jar file
+
+Copy the file into the lib folder
+
+Open VS Code
+
+Go to JAVA PROJECTS panel
+
+Under Referenced Libraries, ensure the JAR file is added
+
+VS Code will automatically link the library to the project.
+
+Managing Libraries in VS Code
+
+All added libraries are shown under Referenced Libraries
+
+You can add or remove JAR files anytime
+
+No manual classpath configuration is required
+
+Notes
+
+This project uses manual library management
+
+No Maven or Gradle is used
+
+Suitable for learning, practice, and small Java projects
